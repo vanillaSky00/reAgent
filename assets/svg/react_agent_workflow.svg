@@ -1,73 +1,45 @@
-<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
-<mask id="imagine-text-gaps-mrbpu8" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="520" fill="white"/><rect x="280.2601623535156" y="41.31914138793945" width="119.4797134399414" height="21.361717224121094" fill="black" rx="2"/><rect x="308.39007568359375" y="129.3191375732422" width="63.21990966796875" height="21.428712844848633" fill="black" rx="2"/><rect x="272.0201110839844" y="148.5248260498047" width="135.95977783203125" height="18.95036792755127" fill="black" rx="2"/><rect x="292.1699523925781" y="236.31915283203125" width="95.66009521484375" height="21.361717224121094" fill="black" rx="2"/><rect x="414" y="222.94325256347656" width="27.946382522583008" height="18.95036792755127" fill="black" rx="2"/><rect x="328.8450927734375" y="297.9432678222656" width="22.309853553771973" height="18.95036792755127" fill="black" rx="2"/><rect x="519.99267578125" y="239.31915283203125" width="52.01466751098633" height="21.361717224121094" fill="black" rx="2"/><rect x="500.6152038574219" y="337.31915283203125" width="90.76957702636719" height="21.361717224121094" fill="black" rx="2"/><rect x="490.7814025878906" y="356.5248107910156" width="110.43714904785156" height="18.95036792755127" fill="black" rx="2"/><rect x="179.55494689941406" y="243.94325256347656" width="32.4450569152832" height="18.95036792755127" fill="black" rx="2"/><rect x="294.3138122558594" y="443.31915283203125" width="91.3724136352539" height="21.361717224121094" fill="black" rx="2"/><rect x="295.69281005859375" y="462.52484130859375" width="88.61443328857422" height="18.95036792755127" fill="black" rx="2"/></mask></defs>
-
-<!-- Task node -->
-<g onclick="sendPrompt('Tell me more about the Task input step')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-<rect x="250" y="30" width="180" height="44" rx="8" stroke-width="0.5" style="fill:rgb(68, 68, 65);stroke:rgb(180, 178, 169);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="340" y="52" text-anchor="middle" dominant-baseline="central" style="fill:rgb(211, 209, 199);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Task (user input)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#172222"/></marker></defs>
+<rect x="7" y="7" width="1010" height="1010" rx="65" fill="#FFFFFF" stroke="#B8BFBE" stroke-width="3"/>
+<rect x="51" y="44" width="922" height="145" rx="46" fill="#2ED9AA" stroke="none" stroke-width="2.2"/>
+<text x="512" y="136" font-family="Hiragino Sans GB" font-size="52" font-weight="400" text-anchor="middle" fill="#172222">ReAct</text>
+<g data-from="task" data-to="thought" data-label=""><path d="M 340,324 L 340,393" fill="none" stroke="#172222" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/></g>
+<g data-from="thought" data-to="tool" data-label=""><path d="M 340,497 L 340,551" fill="none" stroke="#172222" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/></g>
+<g data-from="tool" data-to="action" data-label="yes"><path d="M 480,625 L 660,625" fill="none" stroke="#172222" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/></g>
+<rect x="536" y="578" width="68" height="33" rx="8" fill="#FFFFFF" stroke="none" stroke-width="2.2"/>
+<text x="570" y="602" font-family="Hiragino Sans GB" font-size="23" font-weight="400" text-anchor="middle" fill="#172222">yes</text>
+<g data-from="tool" data-to="final" data-label="no"><path d="M 340,699 L 340,818" fill="none" stroke="#172222" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/></g>
+<rect x="306" y="742" width="68" height="33" rx="8" fill="#FFFFFF" stroke="none" stroke-width="2.2"/>
+<text x="340" y="766" font-family="Hiragino Sans GB" font-size="23" font-weight="400" text-anchor="middle" fill="#172222">no</text>
+<g data-from="action" data-to="observation" data-label=""><path d="M 790,675 L 790,790" fill="none" stroke="#172222" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/></g>
+<g data-from="observation" data-to="thought" data-label="loop"><path d="M 920,850 L 958,850 L 958,445 L 540,445" fill="none" stroke="#172222" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="7 7"/></g>
+<rect x="756" y="421" width="68" height="33" rx="8" fill="#FFFFFF" stroke="none" stroke-width="2.2"/>
+<text x="790" y="445" font-family="Hiragino Sans GB" font-size="23" font-weight="400" text-anchor="middle" fill="#172222">loop</text>
+<g data-node="task">
+<rect x="140" y="236" width="400" height="88" rx="18" fill="#E6FFF7" stroke="#172222" stroke-width="2.2"/>
+<text x="340.0" y="289.0" font-family="Hiragino Sans GB" font-size="26" font-weight="400" text-anchor="middle" fill="#172222">Task (user input)</text>
 </g>
-
-<!-- Arrow: Task → Thought -->
-<line x1="340" y1="74" x2="340" y2="116" stroke="var(--t)" stroke-width="1" marker-end="url(#arrow)" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(156, 154, 146);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-<!-- Thought node -->
-<g onclick="sendPrompt('How does the Thought step work in ReAct?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-<rect x="250" y="120" width="180" height="56" rx="8" stroke-width="0.5" style="fill:rgb(60, 52, 137);stroke:rgb(175, 169, 236);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="340" y="140" text-anchor="middle" dominant-baseline="central" style="fill:rgb(206, 203, 246);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Thought</text>
-<text x="340" y="158" text-anchor="middle" dominant-baseline="central" style="fill:rgb(175, 169, 236);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">LLM reasons next step</text>
+<g data-node="thought">
+<rect x="140" y="393" width="400" height="104" rx="18" fill="#BFFFF0" stroke="#172222" stroke-width="2.2"/>
+<text x="340.0" y="440.0" font-family="Hiragino Sans GB" font-size="26" font-weight="400" text-anchor="middle" fill="#172222">Thought</text>
+<text x="340.0" y="471.0" font-family="Hiragino Sans GB" font-size="22" font-weight="400" text-anchor="middle" fill="#172222">LLM reasons next step</text>
 </g>
-
-<!-- Decision diamond (Tool needed?) — built from a rotated rect approach using path -->
-<g onclick="sendPrompt('How does the agent decide if a tool is needed?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-<path d="M340 210 L410 250 L340 290 L270 250 Z" fill="var(--bg2)" stroke="var(--b)" stroke-width="0.5" style="fill:rgb(38, 38, 36);stroke:rgba(222, 220, 209, 0.3);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="340" y="247" text-anchor="middle" dominant-baseline="central" style="fill:rgb(211, 209, 199);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Tool needed?</text>
+<g data-node="tool">
+<polygon points="340.0,551 480,625.0 340.0,699 200,625.0" fill="#E6FFF7" stroke="#172222" stroke-width="2.2"/>
+<text x="340.0" y="634.0" font-family="Hiragino Sans GB" font-size="26" font-weight="400" text-anchor="middle" fill="#172222">Tool needed?</text>
 </g>
-
-<!-- Arrow: Thought → Decision -->
-<line x1="340" y1="176" x2="340" y2="212" stroke="var(--t)" stroke-width="1" marker-end="url(#arrow)" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(156, 154, 146);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-<!-- "Yes" label -->
-<text x="418" y="237" style="fill:#1D9E75;font-weight:500;fill:rgb(29, 158, 117);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:500;text-anchor:start;dominant-baseline:auto">yes</text>
-
-<!-- "No" label -->
-<text x="340" y="312" text-anchor="middle" style="fill:#E24B4A;font-weight:500;fill:rgb(226, 75, 74);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:500;text-anchor:middle;dominant-baseline:auto">no</text>
-
-<!-- Arrow: Decision → Action (right) -->
-<line x1="410" y1="250" x2="462" y2="250" stroke="var(--t)" stroke-width="1" marker-end="url(#arrow)" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(156, 154, 146);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-<!-- Action node -->
-<g onclick="sendPrompt('What kinds of actions can the ReAct agent take?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-<rect x="466" y="228" width="160" height="44" rx="8" stroke-width="0.5" style="fill:rgb(8, 80, 65);stroke:rgb(93, 202, 165);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="546" y="250" text-anchor="middle" dominant-baseline="central" style="fill:rgb(159, 225, 203);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Action</text>
+<g data-node="action">
+<rect x="660" y="575" width="260" height="100" rx="18" fill="#BFFFF0" stroke="#172222" stroke-width="2.2"/>
+<text x="790.0" y="634.0" font-family="Hiragino Sans GB" font-size="26" font-weight="400" text-anchor="middle" fill="#172222">Action</text>
 </g>
-
-<!-- Arrow: Action → Observation (down) -->
-<line x1="546" y1="272" x2="546" y2="324" stroke="var(--t)" stroke-width="1" marker-end="url(#arrow)" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(156, 154, 146);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-<!-- Observation node -->
-<g onclick="sendPrompt('What is an Observation in the ReAct loop?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-<rect x="466" y="328" width="160" height="56" rx="8" stroke-width="0.5" style="fill:rgb(113, 43, 19);stroke:rgb(240, 153, 123);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="546" y="348" text-anchor="middle" dominant-baseline="central" style="fill:rgb(245, 196, 179);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Observation</text>
-<text x="546" y="366" text-anchor="middle" dominant-baseline="central" style="fill:rgb(240, 153, 123);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Tool returns result</text>
+<g data-node="observation">
+<rect x="660" y="790" width="260" height="120" rx="18" fill="#BFFFF0" stroke="#172222" stroke-width="2.2"/>
+<text x="790.0" y="845.0" font-family="Hiragino Sans GB" font-size="26" font-weight="400" text-anchor="middle" fill="#172222">Observation</text>
+<text x="790.0" y="876.0" font-family="Hiragino Sans GB" font-size="22" font-weight="400" text-anchor="middle" fill="#172222">Tool returns result</text>
 </g>
-
-<!-- Feedback loop: Observation → back up to Thought -->
-<!-- L-shaped path: go left from Observation, then up to Thought level, then right into Thought -->
-<path d="M466 356 L220 356 L220 148 L248 148" fill="none" stroke="var(--t)" stroke-width="1" marker-end="url(#arrow)" opacity="0.4" stroke-dasharray="4 3" style="fill:none;stroke:rgb(156, 154, 146);color:rgb(255, 255, 255);stroke-width:1px;stroke-dasharray:4px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-<!-- Loop label -->
-<text x="208" y="258" text-anchor="end" style="opacity:0.6;fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:end;dominant-baseline:auto">loop</text>
-
-<!-- Arrow: Decision → Final Answer (down) -->
-<line x1="340" y1="290" x2="340" y2="430" stroke="var(--t)" stroke-width="1" marker-end="url(#arrow)" opacity="0.5" mask="url(#imagine-text-gaps-mrbpu8)" style="fill:rgb(0, 0, 0);stroke:rgb(156, 154, 146);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-<!-- Final Answer node -->
-<g onclick="sendPrompt('When does the agent produce a final answer?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-<rect x="250" y="434" width="180" height="56" rx="8" stroke-width="0.5" style="fill:rgb(60, 52, 137);stroke:rgb(175, 169, 236);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="340" y="454" text-anchor="middle" dominant-baseline="central" style="fill:rgb(206, 203, 246);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Final answer</text>
-<text x="340" y="472" text-anchor="middle" dominant-baseline="central" style="fill:rgb(175, 169, 236);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Task complete</text>
+<g data-node="final">
+<rect x="140" y="818" width="400" height="104" rx="18" fill="#E6FFF7" stroke="#172222" stroke-width="2.2"/>
+<text x="340.0" y="865.0" font-family="Hiragino Sans GB" font-size="26" font-weight="400" text-anchor="middle" fill="#172222">Final answer</text>
+<text x="340.0" y="896.0" font-family="Hiragino Sans GB" font-size="22" font-weight="400" text-anchor="middle" fill="#172222">Task complete</text>
 </g>
-
 </svg>
